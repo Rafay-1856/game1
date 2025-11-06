@@ -46,7 +46,11 @@ const dubara = () => {
 };
 
 const showwin = (winner) => {
-  p.innerText = `Congratulation, Winner is ${winner}`;
+  if (winner === "V") {
+    p.innerText = "King Virat Kohli Win 🏆";
+  } else if (winner === "B") {
+    p.innerText = "Babar Win 🏆";
+  }
   msg.classList.remove("hide");
   dubara();
 };
